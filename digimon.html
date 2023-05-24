@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digimon</title>
+
+    <link rel="icon" type="image/jpg" href="./assets/img/calumon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,200;0,300;0,400;0,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- estilos propios -->
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <img src="assets/img/digimon-logo.png" alt="Logo Digimon" class="logo" width="100">
+
+            <nav>
+                <ul>
+                    <li><a href="#tBox">Momantai!</a></li>
+                    <li><a href="#busquedaDigimon">Elige tu digimon</a></li>
+                    <li><a href="#tabla1">Protagonistas Digimon Adventure</a></li>
+                    <li><a href="#tabla2">Digimones nivel "Fresh"</a></li>
+                </ul>
+            </nav>
+            <div class="toggle_btn"><i><img src="./assets/img/digibay.png" alt="digibay" width="70"></i></div>
+        </div>
+
+        <div class="dropdown_menu">
+            <ul>
+                <li><a href="#tBox">Momantai!</a></li>
+                <li><a href="#busquedaDigimon">Elige tu digimon</a></li>
+                <li><a href="#tabla1">Protagonistas Digimon Adventure</a></li>
+                <li><a href="#tabla2">Digimones nivel "Fresh"</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <div id="inicio">
+        <section class="tBox">
+            <div>
+                <div class="nube">
+                    <button class="button open-button cloud">MOMANTAI!</button>
+                </div>
+                <div class="terriermon">
+                    <img src="assets/img/terriermon2.png" alt="Terriermon" width="400">
+                </div>
+            </div>
+
+        </section>
+
+        <section id="busquedaDigimon">
+            <div id="digimon">
+                <div>
+                    <input type="text" placeholder="Nombre del Digimon" id="buscarDigimon">
+                    <button type="submit" value="Buscar" id="botonBuscar">Encontrar</button>
+                </div>
+            </div>
+            <div id="digmonSeleccionado">
+                <div>
+                    <h3 id="error"></h3>
+                </div>
+                <div id="imagen"></div>
+                <h3 class="diginombre" id="nombre"></h3>
+                <h4 class="diginivel" id="nivel"></h4>
+            </div>
+
+        </section>
+    </div>
+
+    <section id="tabla1">
+        <div class="table">
+            <table>
+                <caption>
+                    Protagonistas de Digimon Adventure
+                </caption>
+                <thread>
+                    <tr>
+                        <th id="name" scope="col">Nombre Digimon</th>
+                        <th id="level" scope="col">Nivel</th>
+                        <th id="img" scope="col">Imagen</th>
+                    </tr>
+                </thread>
+                <tbody id="cuerpoTabla1">
+                    <tr>
+                        <td data-cell="nombre" id="nombre1"></td>
+                        <td data-cell="nivel" id="nivel1"></td>
+                        <td data-cell="imagen" id="imagenTabla1"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="nombre" id="nombre2"></td>
+                        <td data-cell="nivel" id="nivel2"></td>
+                        <td data-cell="imagen" id="imagenTablas2"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="nombre" id="nombre3"></td>
+                        <td data-cell="nivel" id="nivel3"></td>
+                        <td data-cell="imagen" id="imagenTabla3"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="nombre" id="nombre4"></td>
+                        <td data-cell="nivel" id="nivel4"></td>
+                        <td data-cell="imagen" id="imagenTabla4"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="nombre" id="nombre5"></td>
+                        <td data-cell="nivel" id="nivel5"></td>
+                        <td data-cell="imagen" id="imagenTabla5"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="nombre" id="nombre6"></td>
+                        <td data-cell="nivel" id="nivel6"></td>
+                        <td data-cell="imagen" id="imagenTabla6"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="nombre" id="nombre7"></td>
+                        <td data-cell="nivel" id="nivel7"></td>
+                        <td data-cell="imagen" id="imagenTabla7"></td>
+                    </tr>
+                    <tr>
+                        <td data-cell="nombre" id="nombre8"></td>
+                        <td data-cell="nivel" id="nivel8"></td>
+                        <td data-cell="imagen" id="imagenTabla8"></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </section>
+
+    <section id="tabla2">
+        <div class="table">
+            <table>
+                <caption>
+                    Digimones Nivel "Fresh"
+                </caption>
+                <thread>
+                    <tr>
+                        <th id="name" scope="col">Nombre Digimon</th>
+                        <th id="level" scope="col">Nivel</th>
+                        <th id="img" scope="col">Imagen</th>
+                    </tr>
+                </thread>
+                <tbody id="cuerpoTabla2">
+                    <tr>
+                        <td data-cell="nombre"></td>
+                        <td data-cell="nivel"></td>
+                        <td data-cell="imagen" id="imagenTabla2"></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </section>
+
+
+    <dialog class="modal" id="modal">
+        <h2>¿Qué significa 'Momantai'?</h2>
+        <img src="assets/img/terriermon.png" alt="Terriermon" width="100%">
+        <p>Esta palabra que tanto dice Terriermon significa "No te preocupes, todo se solucionara. Tomalo con calma."
+            <br>Si quieres que te lo explique él mismo <a href="https://youtu.be/io3gWqldgmg">Aquí puedes verlo.</a>
+        </p>
+        <div class="boton">
+            <button class="button close-button">X</button>
+        </div>
+    </dialog>
+
+
+    <footer><img src="assets/img/crew-digimon.png" alt="digimon-crew" id="imagenFooter"></footer>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script> -->
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

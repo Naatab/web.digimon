@@ -91,6 +91,7 @@ nav a:hover::before {
     border-radius: 10px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1;
 }
 
 .dropdown_menu.open {
@@ -107,6 +108,10 @@ nav a:hover::before {
 .dropdown_menu {
     display: flex;
     justify-content: center;
+}
+
+#inicio {
+    height: 90dvh;
 }
 
 .nube,
@@ -283,7 +288,6 @@ dialog p a {
 
 #tabla1,
 #tabla2 {
-
     padding: 1rem;
 }
 
@@ -336,11 +340,11 @@ footer {
 }
 
 @media (min-width: 1096px) {
-   
+
     .dropdown_menu.open {
         display: none;
     }
-   
+
     .tBox {
         display: grid;
         grid-template-columns: 20% 20% 20% 20% 20%;

@@ -145,7 +145,7 @@ nav a:hover::before {
     content: '';
     position: absolute;
     background: #f2f9fe;
-    z-index: -1
+    z-index: -1;
 }
 
 .cloud:after {
@@ -386,6 +386,10 @@ footer {
 
     .dropdown_menu {
         display: block;
+    }
+
+    #inicio {
+        height: 130dvh;
     }
 
     th {
